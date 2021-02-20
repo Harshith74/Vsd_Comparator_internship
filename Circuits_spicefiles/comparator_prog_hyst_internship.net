@@ -1,4 +1,4 @@
-* C:\Users\harshith\Downloads\comparator_prog_hyst_internship.asc
+* C:\users\harshith\Desktop\VSD_Internship\Vsd_Comparator_internship\Circuits_spicefiles\comparator_prog_hyst_internship.asc
 M1 N001 Vip N003 0 sky130_fd_pr__nfet_01v8
 M2 vdd N001 N002 vdd sky130_fd_pr__pfet_01v8
 M3 N001 N001 vdd vdd sky130_fd_pr__pfet_01v8
@@ -20,8 +20,9 @@ V2 Vip 0 0m
 V3 Vim 0 1
 .model NMOS NMOS
 .model PMOS PMOS
-.lib C:\Users\harshith\Documents\LTspiceXVII\lib\cmp\standard.mos
+.lib C:\Program Files (x86)\LTC\LTspiceIV\lib\cmp\standard.mos
 .tran 10n
-.include "C:\Users\harshith\Downloads\sky130CircuitDesignWorkshop\design\sky130_fd_pr\models\sky130.lib.spice"
+.lib "../circuits_cells/design/sky130_fd_pr/models/sky130.lib.spice" tt
+.param temp=27
 .backanno
 .end

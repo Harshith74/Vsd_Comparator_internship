@@ -1,7 +1,11 @@
 * C:\Users\harshith\Downloads\comparator_prog_hyst_internship.asc
-.lib C:\Users\harshith\Downloads\sky130CircuitDesignWorkshop\design\sky130_fd_pr\models\sky130.lib.spice
 
-M1 N001 Vip N003 0 sky130_fd_pr__nfet_01v8
+.param temp=27
+
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+.options wnflag = 1
+
+M1 N001 Vip N003 0 sky130_fd_pr__nfet_01v8 
 M2 vdd N001 N002 vdd sky130_fd_pr__pfet_01v8
 M3 N001 N001 vdd vdd sky130_fd_pr__pfet_01v8
 M4 N003 Vim N002 0 sky130_fd_pr__nfet_01v8
@@ -17,11 +21,11 @@ M13 0 N005 N005 0 sky130_fd_pr__nfet_01v8
 M14 N004 N005 0 0 sky130_fd_pr__nfet_01v8
 I1 vdd N005 47n
 I2 vdd N003 1µ
-V1 vdd 0 5
-V2 Vip 0 0m
-V3 Vim 0 1
+V1 vdd 0 1.8
+V2 Vip 0 1.8
+V3 Vim 0 0
 
-.tran 10n
+.tran 0.1n 10n
 .control
 run
 .endc
