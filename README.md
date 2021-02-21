@@ -46,9 +46,25 @@ Weights for the circuit at 0.5um process from the paper
 
 Sky130 doesn't have proportionate widths and lengths. Therefore the closest W/L ratios were chosen. Circuit was built and generated netlist was run through ngspice after including the required libraries. This was taken from [sky130_fd_pr](https://github.com/kunalg123/sky130CircuitDesignWorkshop/tree/main/design/sky130_fd_pr)
 
-### Areas of improvement
+### Simulation results
+Circuit:
+![](Images/sim_circuit.jpg)
+Input 1 Vplus and Vminus:
+<br />
+<img src="Images/vip_vim.jpg" width="500">
+Output:
+<br />
+<img src="Images/vout_1.jpg" width="500">
+Input 2 Vplus and Vminus:
+<br />
+<img src="Images/vip_vim2.jpg" width="500">
+Output2:
+<br />
+<img src="Images/vout_2.jpg" width="500">
+### Observation:
 <!--- The hysteresis at lower differential voltage is higher than the hysteresis at higher differential voltage. To get the circuit to work at wider range of voltages is difficult. A few variations of the circuit were tried as present in the PreLayout/archive folder. >
 -->
+The circuit is clearly not working as expected. The output is high for different differential inputs. Most likely the problem is with how the widths were chosen. A more in-depth analysis is to be done to find the appropriate weights.
 ## References
 <a id="1">[1]</a> P. M. Furth, Y. Tsen, V. B. Kulkarni and T. K. Poriyani House Raju, "On the design of
 low-power CMOS comparators with programmable hysteresis," 2010 53rd IEEE
