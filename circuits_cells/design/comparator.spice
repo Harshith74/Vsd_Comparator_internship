@@ -5,20 +5,20 @@
 .lib "sky130_fd_pr/models/sky130.lib.spice" tt
 .options wnflag = 1
 
-M1 N001 Vip N003 0 sky130_fd_pr__nfet_01v8 
-M2 vdd N001 N002 vdd sky130_fd_pr__pfet_01v8
-M3 N001 N001 vdd vdd sky130_fd_pr__pfet_01v8
-M4 N003 Vim N002 0 sky130_fd_pr__nfet_01v8
-M5 vdd N002 V02 vdd sky130_fd_pr__pfet_01v8
-M6 V02 N003 0 0 sky130_fd_pr__nfet_01v8
-M7 vdd V02 Vout vdd sky130_fd_pr__pfet_01v8
-M8 Vout V02 0 0 sky130_fd_pr__nfet_01v8
-M9 0 N003 N003 0 sky130_fd_pr__nfet_01v8
-M10 N003 N003 0 0 sky130_fd_pr__nfet_01v8
-M11 N001 Vout N004 0 sky130_fd_pr__nfet_01v8
-M12 N004 V02 N002 0 sky130_fd_pr__nfet_01v8
-M13 0 N005 N005 0 sky130_fd_pr__nfet_01v8
-M14 N004 N005 0 0 sky130_fd_pr__nfet_01v8
+XM1 N001 Vip N003 0 sky130_fd_pr__nfet_01v8 w=5 l=1
+XM2 vdd N001 N002 vdd sky130_fd_pr__pfet_01v8 w=5 l=0.5
+XM3 N001 N001 vdd vdd sky130_fd_pr__pfet_01v8 w=5 l=0.5
+XM4 N003 Vim N002 0 sky130_fd_pr__nfet_01v8 w=5 l=1
+XM5 vdd N002 V02 vdd sky130_fd_pr__pfet_01v8 w=3 l=0.5
+XM6 V02 N003 0 0 sky130_fd_pr__nfet_01v8 w=3 l=0.5
+XM7 vdd V02 Vout vdd sky130_fd_pr__pfet_01v8 w=3 l=0.25
+XM8 Vout V02 0 0 sky130_fd_pr__nfet_01v8 w=3 l=0.25
+XM9 0 N003 N003 0 sky130_fd_pr__nfet_01v8 w=5 l=1
+XM10 N003 N003 0 0 sky130_fd_pr__nfet_01v8 w=5 l=1
+XM11 N001 Vout N004 0 sky130_fd_pr__nfet_01v8 w=1 l=0.25
+XM12 N004 V02 N002 0 sky130_fd_pr__nfet_01v8 w=1 l=0.25
+XM13 0 N005 N005 0 sky130_fd_pr__nfet_01v8 w=5 l=1
+XM14 N004 N005 0 0 sky130_fd_pr__nfet_01v8 w=5 l=1 
 I1 vdd N005 47n
 I2 vdd N003 1µ
 V1 vdd 0 1.8
