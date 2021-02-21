@@ -49,7 +49,7 @@ Sky130 doesn't have proportionate widths and lengths. Therefore the closest W/L 
 ### Simulation results
 Circuit:
 <br />
-<img src="Images/sim_circuit.jpg" width="500">
+<img src="Images/sim_circuit.jpg" width="1000" height="400">
 <br />
 Input 1 Vplus and Vminus:
 <br />
