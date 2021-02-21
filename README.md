@@ -52,12 +52,15 @@ Circuit:
 Input 1 Vplus and Vminus:
 <br />
 <img src="Images/vip_vim.jpg" width="500">
+<br />
 Output:
 <br />
 <img src="Images/vout_1.jpg" width="500">
+<br />
 Input 2 Vplus and Vminus:
 <br />
 <img src="Images/vip_vim2.jpg" width="500">
+<br />
 Output2:
 <br />
 <img src="Images/vout_2.jpg" width="500">
