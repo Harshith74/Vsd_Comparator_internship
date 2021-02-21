@@ -32,7 +32,7 @@ in need.
 
 ## Comparator Circuit
 Below is comparator circuit used for this IP take from [[1]](#1)
-[](Images/Comparator_Circuit.jpg)
+![](Images/Comparator_Circuit.jpg)
 
 In the circuit above **Vip** and **Vim** are differential inputs. **Ihyst** is the current used to control the hysteresis. **Vout** is the output
 
