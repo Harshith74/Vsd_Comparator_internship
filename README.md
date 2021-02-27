@@ -46,6 +46,26 @@ Weights for the circuit at 0.5um process from the paper
 
 Sky130 doesn't have proportionate widths and lengths. Therefore the closest W/L ratios were chosen. Circuit was built and generated netlist was run through ngspice after including the required libraries. This was taken from [sky130_fd_pr](https://github.com/kunalg123/sky130CircuitDesignWorkshop/tree/main/design/sky130_fd_pr)
 
+### How to run Simulation:
+The files from this repository can be downloaded and used by the following commands :
+
+Install Git:
+>`sudo apt install -y git`
+
+Clone current repositry:
+>`git clone https://github.com/Harshith74/Vsd_Comparator_internship.git`
+
+How to run simulation:
+
+Install Ngspice
+>`sudo apt install ngspice`
+
+Run spice netlist with ngspice:
+>`cd circuits_cells/designs`
+
+>`ngspice comparator.spice`
+<p>&nbsp;</p>
+
 ### Simulation results
 Circuit:
 <br />
@@ -66,6 +86,8 @@ Input 2 Vplus and Vminus:
 Output2:
 <br />
 <img src="Images/vout_2.jpg" width="500">
+
+
 ### Observation:
 <!--- The hysteresis at lower differential voltage is higher than the hysteresis at higher differential voltage. To get the circuit to work at wider range of voltages is difficult. A few variations of the circuit were tried as present in the PreLayout/archive folder. >
 -->
